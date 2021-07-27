@@ -1,3 +1,5 @@
+/* Common styles*/
+
 * {
     margin: 0;
     padding: 0;
@@ -63,19 +65,43 @@ body {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
-    border: 1px solid red;
+    padding: 3%;
 }
 
+h1 {
+    margin: 0;
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #7ee1ff;
+    content: '';
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* Header styles*/
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(10, 33, 237, 0.7)), url("../images/IMG_7462.jpg");
     height: 100vh;
     background-position: center;
     background-size: cover;
-}
-
-h1 {
-    margin: 0;
 }
 
 .header-text {
@@ -146,20 +172,45 @@ nav {
     padding: 25px;
 }
 
+/* Button styles*/
 .button:link,
-.button:visited{
+.button:visited {
     display: inline-block;
     padding: 10px 30px;
     text-decoration: none;
     color: #7ee1ff;
     font-weight: 300;
     border-radius: 150px;
+    transition: background-color 0.3s, border 0.3s;
 }
 
-.button-order {
+.button-order:link,
+.button-order:visited {
     background: #0A21ED;
     border: 1px solid #7ee1ff;
 }
-.button-more{
+
+.button-more:link,
+.button-more:visited {
     border: 1px solid #7ee1ff;
+}
+
+.button:hover,
+.button:active {
+    background: #07169c;
+}
+/* Features styles*/
+#headline-text{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 100%;
+
+}
+.features-icon{
+    font-size: 300%;
+    color: #7ee1ff;
+    margin-bottom: 20px;
+}
+section p{
+    font-size: 80%;
 }
